@@ -1,0 +1,9 @@
+<template name="task">
+  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+    <button class="soon toggle-soon" soon="{{soon}}">🕙</button>
+    <button class="important toggle-important" important="{{important}}">⚠</button>
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+    <span class="text">Task: {{text}}</span>
+  </li>
+</template>
